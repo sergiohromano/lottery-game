@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .'
+    '. . . . . . . . . .';
+}
+
+.selectedContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.ball {
+  --size: 8vh;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+  height: var(--size);
+  width: var(--size);
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.selected {
+  width: 100%;
+  height: 100%;
+  font-size: 40rem;
+  text-align: center;
+}
+
+.app {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  cursor: pointer;
+}
+
+.titleContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.button-close {
+  color: red;
+  border: 1px solid red;
+}
+
+.button-edit {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.button-reset {
+  color: green;
+  border: 1px solid green;
+}
+
+.inputs {
+  font-size: x-large;
+  min-width: 50%;
+}
